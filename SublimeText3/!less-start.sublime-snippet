@@ -43,6 +43,11 @@
 		-o-border-radius: @radius;
 		border-radius: @radius;
 }
+.box-shadow (@x: 2px; @y: 2px; @blur: 4px; @stretch: 2px; @color: rgba(0, 0, 0, 0.5)) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}/*box-shadow: inset(тень внутри) <сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>*/
 
 @import "bootstrap.min.css";
 @import "reset.css";
